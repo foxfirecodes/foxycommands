@@ -4,13 +4,13 @@ namespace FoxyCommands.Commands;
 
 public class CreditsCommand : Command
 {
-  public CreditsCommand() : base("credits") { }
+  public CreditsCommand() : base("credits", "<amount>") { }
 
   public override void Handle(string[] args)
   {
     if (args.Length < 1)
     {
-      ChatManager.Error("usage: /credits <amount>");
+      SendUsage();
       return;
     }
 

@@ -1,0 +1,7 @@
+namespace FoxyCommands
+{
+  class Command
+  {
+
+  }
+}

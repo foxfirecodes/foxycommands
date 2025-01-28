@@ -15,8 +15,6 @@ public class FoxyCommands : BaseUnityPlugin
     internal new static ManualLogSource Logger { get; private set; } = null!;
     internal static Harmony? Harmony { get; set; }
 
-    public static readonly Command COMMANDS = [];
-
     private void Awake()
     {
         Logger = base.Logger;
